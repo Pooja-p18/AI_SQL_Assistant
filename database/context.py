@@ -44,4 +44,3 @@ if __name__ == "__main__":
     
     if database_context:
         print(database_context)
-
