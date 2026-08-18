@@ -21,7 +21,7 @@ def build_database_context():
     for table_name, column_name, data_type in schema:
         
         if table_name != current_table:
-            context += "===========================\n"
+            context += f"\nTable: {table_name}\n"
             current_table = table_name
             
         context += f"   {column_name} : {data_type}\n"
